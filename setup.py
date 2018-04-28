@@ -129,6 +129,7 @@ if sys.version_info >= (3, 5):
 install_requires = [
     'urllib3',
     'certifi',
+    'bson',
     "cachetools;python_version=='2.7'"
 ]
 

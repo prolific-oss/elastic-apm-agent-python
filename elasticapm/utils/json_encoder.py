@@ -16,6 +16,7 @@ try:
     import json
 except ImportError:
     import simplejson as json
+from bson import ObjectId
 
 
 class BetterJSONEncoder(json.JSONEncoder):
@@ -24,7 +25,8 @@ class BetterJSONEncoder(json.JSONEncoder):
         frozenset: list,
         datetime.datetime: lambda obj: obj.strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
         uuid.UUID: lambda obj: obj.hex,
-        bytes: lambda obj: obj.decode('utf-8', errors='replace')
+        bytes: lambda obj: obj.decode('utf-8', errors='replace'),
+        ObjectId: lambda obj: obj.__str__()
     }
 
     def default(self, obj):
