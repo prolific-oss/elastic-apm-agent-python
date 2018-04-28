@@ -36,6 +36,7 @@ pep8
 urllib3-mock
 Twisted
 pytz
+bson
 
 
 aiohttp ; python_version >= '3.5'
