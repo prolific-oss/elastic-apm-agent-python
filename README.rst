@@ -1,4 +1,6 @@
-> This repository is now [archived](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories).
+This repository is now archived_.
+
+.. _archived: https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories
 
 elastic-apm -- Elastic APM agent for Python
 ===========================================
